@@ -135,22 +135,6 @@ export default async function MachineLandingPage({
             </Card>
           )}
 
-          {/* Spares Installation Reports (public, internal page) */}
-          <Link href={`/m/${machine.machineId}/spares`} className="block">
-            <Card className="p-5 hover:bg-white/90 hover:shadow-md transition">
-              <div className="flex items-center gap-4">
-                <div className="h-12 w-12 rounded-2xl bg-black/5 grid place-items-center">
-                  <Wrench className="h-6 w-6 text-black/70" />
-                </div>
-                <div>
-                  <div className="text-lg font-semibold">Spares Installation Reports</div>
-                  <div className="text-sm text-black/60">
-                    Spare parts, quantities, technician details
-                  </div>
-                </div>
-              </div>
-            </Card>
-          </Link>
 
           <a href={waLink} target="_blank" rel="noreferrer" className="block">
             <Card className="p-5 hover:bg-white/90 hover:shadow-md transition">
