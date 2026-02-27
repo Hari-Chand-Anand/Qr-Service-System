@@ -4,11 +4,14 @@ import { Card, Badge, Button } from "@/components/ui";
 
 export const runtime = "nodejs";
 
+// ✅ add these:
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export default async function AdminListPage() {
   const machines = await prisma.machine.findMany({
     orderBy: { updatedAt: "desc" },
   });
-
   return (
     <div className="space-y-4">
       <div className="flex items-end justify-between gap-4">
